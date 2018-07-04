@@ -9,8 +9,8 @@ Run as Maven Install to install all the dependencies.<br />
 
 ### Base Url : http://localhost:9180 <br /> ###
 
-<br />
-* POST : "/transactions"<br />
+
+*POST : "/transactions"<br />
 Accepts : Json<br />
 Example :<br />
 {<br/>
@@ -24,13 +24,12 @@ If the addition of data is successful<br />
 204 - No Content<br />
 If the date belongs to time > 60 seconds<br />
 <br />
-<br />
-<br />
+
 
 * GET : "/statistics"<br />
 Accetps : N/A<br />
 
-Response : <br/>
+Response : 200 <br/> 
 
 {<br/>
   "sum": 0,<br/>
