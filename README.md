@@ -4,6 +4,7 @@ This is the solution for N26 Backend Challenge
 # Build Process :
 Import this Maven project into any IDE example STS/Eclipse.<br />
 Run as Maven Install to install all the dependencies.<br />
+Run as Spring Boot App to access the RestFul APIs.<br/>
 
 # EndPoints 
 
