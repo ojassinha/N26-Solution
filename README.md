@@ -46,6 +46,7 @@ Response : 200 <br/>
 * 3 test cases are written for now.
 * Added comment wherever necessary.
 * Use of Java 8 version Stream API for statistics calculation.
+* Added Log4j for logs.
 
 ### Improvments Area : ###
 
