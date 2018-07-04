@@ -1,25 +1,39 @@
 # N26-Solution
 This is the solution for N26 Backend Challenge
 
-# EndPoints
+# EndPoints 
 
-POST : "/transactions"
-Accepts : Json
-Example :
-{
-  "timestamp" : 1530703865,
-  "amount" : 20.0
-}
+## Base Url : http://localhost:9180 <br />
 
-Response :
-201 - Created
-If the addition of data is successful
-204 - No Content
-If the date belongs to time > 60 seconds
+<br />
+POST : "/transactions"<br />
+Accepts : Json<br />
+Example :<br />
+```{
+      "timestamp" : 1530703865,<br />
+      "amount" : 20.0<br />
+   }```
 
-Build Process :
-Import this Maven project into any IDE example STS/Eclipse.
-Run as Maven Install to install all the dependencies.
+Response :<br />
+201 - Created<br />
+If the addition of data is successful<br />
+204 - No Content<br />
+If the date belongs to time > 60 seconds<br />
+<br />
+<br />
+<br />
+
+GET : "/statistics"<br />
+Accetps : N/A<br />
+
+
+
+
+
+
+# Build Process :
+Import this Maven project into any IDE example STS/Eclipse.<br />
+Run as Maven Install to install all the dependencies.<br />
 
 
 
