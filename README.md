@@ -8,10 +8,10 @@ Run as Spring Boot App to access the RestFul APIs.<br/>
 
 # EndPoints 
 
-### Base Url : http://localhost:9180 <br /> ###
+### Base Url : http://localhost:8080 <br /> ###
 
 
-*POST : "/transactions"<br />
+* POST : "/transactions"<br />
 Accepts : Json<br />
 Example :<br />
 {<br/>
