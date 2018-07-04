@@ -10,10 +10,10 @@ Run as Maven Install to install all the dependencies.<br />
 ### Base Url : http://localhost:9180 <br /> ###
 
 <br />
-POST : "/transactions"<br />
+* POST : "/transactions"<br />
 Accepts : Json<br />
 Example :<br />
-{
+{<br/>
       "timestamp" : 1530703865,<br />
       "amount" : 20.0<br />
 }
@@ -27,7 +27,7 @@ If the date belongs to time > 60 seconds<br />
 <br />
 <br />
 
-GET : "/statistics"<br />
+* GET : "/statistics"<br />
 Accetps : N/A<br />
 
 Response : <br/>
