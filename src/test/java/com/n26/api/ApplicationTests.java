@@ -2,6 +2,7 @@ package com.n26.api;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import org.assertj.core.util.DateUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.n26.api.models.AddTransactionRequestModel;
 import com.n26.api.models.StatisticsModel;
+import com.n26.api.utils.DateUtils;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -35,7 +37,6 @@ public class ApplicationTests {
 		
 		ResponseEntity<StatisticsModel> response = restTemplate.getForEntity("/statistics", StatisticsModel.class);
 		
-		//then
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 	}
 	
@@ -51,5 +52,18 @@ public class ApplicationTests {
 		
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NO_CONTENT);
 	}
+	
+	
+	// This test case is failing for now.
+	
+//	@Test
+//	public void canValidateCorrectEpoch(){
+//		ResponseEntity<?> response = restTemplate.postForEntity("/transactions",
+//				new AddTransactionRequestModel(20.0,DateUtils.getCurrentUTCTime().getTime())
+//				,AddTransactionRequestModel.class);
+//		
+//		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.CREATED);
+//	}
+	
 
 }

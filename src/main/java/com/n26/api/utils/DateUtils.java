@@ -18,7 +18,6 @@ public class DateUtils {
 		try {
 			utcDate = formatNew.parse(localUTCTimeStr);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
