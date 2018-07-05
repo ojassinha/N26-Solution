@@ -1,8 +1,8 @@
 package com.n26.api.repositories;
 
-import java.util.ArrayList;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
@@ -20,7 +20,7 @@ public class TransactionRepositoryImpl implements TransactionRepository {
 
 	private static final Logger logger = LogManager.getLogger(TransactionRepositoryImpl.class);
 
-	final static List<AddTransactionRequestModel> list = new ArrayList<AddTransactionRequestModel>();
+	final static List<AddTransactionRequestModel> list = new CopyOnWriteArrayList<AddTransactionRequestModel>();
 
 	static StatisticsModel model = new StatisticsModel(0, 0, 0, 0, 0);
 

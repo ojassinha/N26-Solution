@@ -16,7 +16,7 @@ public class StatisticsServiceImpl implements StatisticsService {
 	private TransactionRepository repository;
 
 	@Override
-	public synchronized boolean addTransaction(AddTransactionRequestModel addTxnRequestModel)
+	public boolean addTransaction(AddTransactionRequestModel addTxnRequestModel)
 			throws InvalidEpochException {
 
 		if(addTxnRequestModel == null){
@@ -43,7 +43,7 @@ public class StatisticsServiceImpl implements StatisticsService {
 	}
 
 	@Override
-	public synchronized StatisticsModel getCurrentStatistics() {
+	public StatisticsModel getCurrentStatistics() {
 		return repository.getTransactionDataForSixtySeconds();
 	}
 
