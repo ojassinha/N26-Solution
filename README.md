@@ -4,16 +4,17 @@ This is the solution for N26 Backend Challenge
 # Build Process :
 Import this Maven project into any IDE example STS/Eclipse.<br />
 Run as Maven Install to install all the dependencies.<br />
+Run as Spring Boot App to access the RestFul APIs.<br/>
 
 # EndPoints 
 
-### Base Url : http://localhost:9180 <br /> ###
+### Base Url : http://localhost:8080 <br /> ###
 
-<br />
-POST : "/transactions"<br />
+
+* POST : "/transactions"<br />
 Accepts : Json<br />
 Example :<br />
-{
+{<br/>
       "timestamp" : 1530703865,<br />
       "amount" : 20.0<br />
 }
@@ -24,13 +25,12 @@ If the addition of data is successful<br />
 204 - No Content<br />
 If the date belongs to time > 60 seconds<br />
 <br />
-<br />
-<br />
 
-GET : "/statistics"<br />
+
+* GET : "/statistics"<br />
 Accetps : N/A<br />
 
-Response : <br/>
+Response : 200 <br/> 
 
 {<br/>
   "sum": 0,<br/>
@@ -46,6 +46,7 @@ Response : <br/>
 * 3 test cases are written for now.
 * Added comment wherever necessary.
 * Use of Java 8 version Stream API for statistics calculation.
+* Added Log4j for logs.
 
 ### Improvments Area : ###
 
